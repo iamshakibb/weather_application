@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(67, 198, 172), rgb(25, 22, 84)) repeat scroll 0% 0%;
+  color: white;
+}
+
+.icon img {
+  width: 20%;
+}
+
+.time {
+  font-size: 1.5em;
+}
+
+.temperature {
+  margin-top: 20px;
+}
+
+.temperature span {
+  font-size: 8em;
+}
+
+.temperature span:nth-child(2) {
+  font-size: 5em;
+  padding-left: 20px;
+}
+
+.temperature_description p {
+  font-size: 1.5em;
+}
+
+.days_weather {
+  margin-top: 80px;
+}
+.days_weather img {
+  padding-left: 30%;
+}
+
+/*left and right arrow work start*/
+.left_arrow {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 999;
+  transform: translateX(-2%) translateY(-50%);
+}
+
+.right_arrow {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  z-index: 999;
+  transform: translateX(-2%) translateY(-50%);
+}
+/*left and right arrow work end*/
