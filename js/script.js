@@ -5,14 +5,12 @@ window.addEventListener("load", () => {
   if (navigator.geolocation) {
     // getting longitude and latitude by geolocaion
     navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position);
       longitude = position.coords.longitude;
       latitude = position.coords.latitude;
       time = position.timestamp;
       let localTimeFormat = new Date(time);
 
       // weather api address and api key
-      const proxy = "https://cors-anywhere.herokuapp.com/";
       const apiKey = "b15d2d0b7db4b947f2524705375669c7";
       const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&dt=${time}&exclude=current,daily,hourly&appid=${apiKey}&units=metric`;
 
@@ -59,7 +57,7 @@ window.addEventListener("load", () => {
         });
 
       //location api address
-      const location_api = `http://ip-api.com/json/?fields=status,country,city,${latitude},${longitude}`;
+      const location_api = `https://ipapi.co/json/`;
 
       //calling the location api
       fetch(location_api)
