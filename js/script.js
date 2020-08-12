@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
 
       // weather api address and api key
       const apiKey = "b15d2d0b7db4b947f2524705375669c7";
-      const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&dt=${time}&exclude=current,daily,hourly&appid=${apiKey}&units=metric`;
+      const api = `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&dt=${time}&exclude=current,daily,hourly&appid=${apiKey}&units=metric`;
 
       //calling the weather api
       fetch(api)
