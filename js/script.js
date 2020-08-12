@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
       let localTimeFormat = new Date(time);
 
       // weather api address and api key
+      const proxy = "https://cors-anywhere.herokuapp.com/";
       const apiKey = "b15d2d0b7db4b947f2524705375669c7";
       const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&dt=${time}&exclude=current,daily,hourly&appid=${apiKey}&units=metric`;
 
@@ -58,7 +59,7 @@ window.addEventListener("load", () => {
         });
 
       //location api address
-      const location_api = `https://ip-api.com/json/?fields=status,country,city,${latitude},${longitude}`;
+      const location_api = `ip-api.com/json/?fields=status,country,city,${latitude},${longitude}`;
 
       //calling the location api
       fetch(location_api)
