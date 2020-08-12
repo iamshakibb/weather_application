@@ -7,38 +7,48 @@
 body {
   background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(67, 198, 172), rgb(25, 22, 84)) repeat scroll 0% 0%;
   color: white;
+  height: 90vh;
+}
+/* current weather section */
+.current_weather {
+  margin-top: 1%;
 }
 
+/* current weather img */
 .icon img {
   width: 20%;
 }
 
+/* time section */
 .time {
   font-size: 1.5em;
 }
 
+/* temperature section */
 .temperature {
   margin-top: 20px;
 }
 
 .temperature span {
-  font-size: 8em;
+  font-size: 7em;
 }
 
 .temperature span:nth-child(2) {
-  font-size: 5em;
-  padding-left: 20px;
+  font-size: 4em;
+  padding-left: 10px;
 }
 
 .temperature_description p {
   font-size: 1.5em;
 }
 
+/* daily weather section */
 .days_weather {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .days_weather img {
-  padding-left: 30%;
+  display: block;
+  margin: auto;
 }
 
 /*left and right arrow work start*/
