@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
         });
 
       //location api address
-      const location_api = `${proxy}//ip-api.com/json/?fields=status,country,city,${latitude},${longitude},"8.8.8.8"`;
+      const location_api = `//ip-api.com/json/?fields=status,country,city,${latitude},${longitude},"8.8.8.8"`;
 
       //calling the location api
       fetch(location_api)
