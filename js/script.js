@@ -70,6 +70,8 @@ window.addEventListener("load", () => {
           location.textContent = data.city;
         });
     });
+  } else {
+    alert("PLEASE ALLOW YOUR LOCATION");
   }
 });
 
