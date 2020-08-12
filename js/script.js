@@ -77,8 +77,9 @@ window.addEventListener("load", () => {
       (error) => {
         let message = document.querySelector(".error");
         let success = document.querySelector(".success");
-        message.classList.remove("error_style");
+        // message.classList.remove("error_style");
         message.classList.add("show_message");
+        message.style.display = "block";
         success.style.display = "none";
       }
     );
